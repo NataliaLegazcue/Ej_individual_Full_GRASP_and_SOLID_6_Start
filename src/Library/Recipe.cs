@@ -62,5 +62,12 @@ namespace Full_GRASP_And_SOLID
 
             return result;
         }
+        public int GetCookTime()
+        {
+            foreach (TimeOnly in CountdownTimer)
+            {
+                Console.WriteLine("Diferencia de tiempo:"{client.TimeOut()} - {client.OnTimedEvent()});
+            }
+        }
     }
 }

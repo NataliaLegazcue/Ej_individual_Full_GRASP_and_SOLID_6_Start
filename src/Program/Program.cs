@@ -74,5 +74,10 @@ namespace Full_GRASP_And_SOLID
             var query = from Equipment equipment in equipmentCatalog where equipment.Description == description select equipment;
             return query.FirstOrDefault();
         }
+
+        Console.WriteLine($"Cooked: {recipe.Cooked}");
+        recipe.Cook();
+        Thread.Sleep(500); // 0.5 segundos
+        Console.WriteLine($"Cooked: {recipe.Cooked}");
     }
 }
